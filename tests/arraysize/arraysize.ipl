@@ -1,0 +1,5 @@
+i = 5
+new arr[i]
+size arr x
+writeln x
+free arr

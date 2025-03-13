@@ -1,0 +1,55 @@
+# The input numbers are in the range [0, MAX_NUMBER - 1]
+MAX_NUMBER = 10
+N = 30
+new input[N]
+new counts[MAX_NUMBER]
+
+# Generate input
+i = 0
+while i < N
+	random input[i]
+	input[i] = input[i] % MAX_NUMBER
+	if i == N-1
+		writeln input[i]
+	else
+		write input[i]
+	i = i + 1
+
+# Counting sort
+i = 0
+while i < MAX_NUMBER
+	counts[i] = 0
+	i = i + 1
+
+i = 0
+while i < N
+	counts[input[i]] = counts[input[i]] + 1
+	i = i + 1
+
+total = 0
+i = 0
+while i < MAX_NUMBER
+	tmp = counts[i]
+	counts[i] = total
+	total = tmp + total
+	i = i + 1
+
+new output[N]
+i = 0
+while i < N
+	output[counts[input[i]]] = input[i]
+	counts[input[i]] = counts[input[i]] + 1
+	i = i + 1
+
+# Print output
+i = 0
+while i < N
+	if i == N - 1
+		writeln output[i]
+	else
+		write output[i]
+	i = i + 1
+
+free counts
+free input
+free output

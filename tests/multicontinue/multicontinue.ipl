@@ -1,0 +1,11 @@
+i = 0
+while i<=9
+	j = 0
+	i = i+1
+	while j<=9
+		j = j+1
+		if j == 7
+			continue 2
+		write i 
+		writeln j
+	writeln 7777

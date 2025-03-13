@@ -1,0 +1,13 @@
+x = 1 + 2 + 3 #6
+y = x*x #36
+z = (x+y)*12/2 #252
+g = z
+a = 5>x #0
+b = z>y #1
+
+writeln x
+writeln y
+writeln z
+writeln g
+writeln a
+writeln b
