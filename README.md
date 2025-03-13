@@ -1,5 +1,3 @@
----
-
 # Simple Language interpreter in C.  
 
 ## Overview  
@@ -76,5 +74,3 @@ The interpreter can be executed using:
 - **Complex Expressions** → `tests/expres/expres.ipl`  
 
 ## Check out the tests to see some examples
-
----
